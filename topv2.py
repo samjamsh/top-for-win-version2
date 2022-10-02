@@ -162,6 +162,7 @@ def proccess():
         n = -3 # pin counter to work after 'number' var stops (this -3 stands for the first three lines in 'tasklist' command output, these first 3 lines are not necessary so we jump it and go directly to the proccess's)
         for character in data:
         # for each character in system proccess's strings
+            if character == "ÿ": character = " "
             line += character
             if character == '\n':
  
